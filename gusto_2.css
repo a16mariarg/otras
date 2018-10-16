@@ -1,0 +1,226 @@
+  
+/* Estilos generales de toda la pagina */
+  body { 
+	  background: #399;
+	  font-family: Verdana, Arial, Helvetica, sans-serif;
+	  font-size: 14px;
+  }
+  
+  /*titulo de la cabecera*/
+	h1 { color: #bb8fce; 
+		font-weight: bold; 
+		text-align: left;
+	}
+
+/* Ponemos el ancho y centrado el div que lo contiene todo*/
+		#main {
+		  width: 960px;
+		  margin: 0 auto;
+		  padding: 0;
+		  display: flex;  /*para que los elementos del contenedor main sean flexibles*/
+		  flex-direction: row;  /*para que los elementos dentro del contenedor se coloquen en fila*/
+		  -webkit-flex-direction: row; /*para su visualizacion en Chrome*/
+		  -moz-flex-direction: row;  /*para su visualizacion en Mozilla*/
+		}
+		 
+		/*Definiendo dentro la seccion main el elemento section*/
+		#main > section {
+		  margin: 4px 0;
+		  padding: 5px 0;
+			order: 2; /*indica el orden en que aparece el elemento del medio (donde va ir colocado en este caso el texto)*/
+		  -webkit-order: 2; /*para su visualizacion en Chrome*/
+		 -moz-order: 2; /*para su visualizacion en Mozilla*/
+		}
+
+	
+		#main > section > article {
+		  margin: 4px 4px 10px 4px;/*las medidas siguen las agujas del reloj. 4px de margen superior, 4px de margen derecho, 10px de margen inferior y 4px de margen izquierdo*/
+		  padding: 5px; /*espacio interior, al haber solo el valor 15px afecta a todos los lados de article*/
+		  min-height: 200px; /*lo que va a ocupar de altura minima*/
+		  border: 1px solid #cccc33;/*cambia los estilos a partir de aqui con respecto a la pagina de inicio*/ /*grosor, tipo y color del borde*/
+		  border-radius: 7px; /*afecta a las cuatro esquinas del borde*/
+		  background: #ddff88;
+		 margin: 0 auto; /*centrado en el contenedor*/
+		  
+		}
+		
+		
+		 
+			/*definiendo la clase posicion que afecta a las imagenes*/	
+	.posicion {
+		order: -1;
+		width: 250px; /*ancho*/
+		margin-left: 30px; /*margen derecho*/
+		
+	}	
+		
+		/*clase uno, afecta al primer articulo*/
+	  .uno {
+	flex: 1;  /*lo que ocupa*/
+	-webkit-flex: 1; 
+	-webkit-order: 1;
+	order: 1; /*orden*/
+
+}
+
+	/*clase dos, afecta al segundo articulo*/
+.dos {
+	flex: 1; /*lo que ocupa*/
+	-webkit-flex: 1;
+	-webkit-order: 2;
+	order: 2; /*orden*/
+
+	
+}
+
+/*clase tres, afecta al tercer articulo*/
+.tres {
+	flex: 1; /*lo que ocupa*/
+	-webkit-flex: 1;
+	-webkit-order: 3;
+	order: 3; /*orden*/
+
+
+}
+
+
+	
+
+
+
+/* Definiendo los atributos de tapas */
+h2 {color: #FFFFFF; text-align: center}
+
+p {text-align: left; color: #273746;}
+
+p em {font-weight: bold; }
+		  
+		  
+		/*clase columna. Define los estilos de columna de cada articulo*/  
+		  
+		  .columna {
+
+	
+
+	 -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3; /*numero de columnas*/
+    
+    -moz-column-gap: 20px;	 /*espacio entre cada una*/
+	-webkit-column-gap: 20px;
+	column-gap: 20px;
+    
+	-moz-column-rule: 3px solid black; /*linea divisoria tiene un grosor de 3px, de tipo solido y color negro*/
+	-webkit-column-rule: 3px solid black;
+	column-rule: 3px solid black;
+		
+
+}
+	
+.vacio {height: 15px; width: 100%;} /*clase vacio. Define el espacio entre los articulos*/
+	
+/*Definiendo el navegador dentro del contenedor principal*/
+		#main > nav {
+		  margin: 4px;
+		  padding: 5px;
+		 min-height: 475px;
+		  order: 1; /*el orden que ocupa dentro del contenedor*/
+		  -webkit-order: 1; /*para la visualizacion de Chrome*/
+		  -moz-order: 1; /*para la visualizacion en Mozilla*/
+		  justify-content: flex-start; /*alinea el elemento flex desde el comienzo*/
+		  flex-direction: row; /*para que se coloque en fila*/
+		  flex-wrap: wrap; /*el elemento flex es colocado en una sola linea*/
+		  display: flex; /*para que sea un elemento flexible*/
+		  
+			
+		}
+			
+				
+				/*Definiendo el navegador*/
+		 ul {
+		  margin: auto;
+		  font-size: 10px;
+		  font-weight: bold;
+		
+
+		  }
+		  
+
+		 li {
+		  padding:0px;
+		  margin: 0px;
+		  width: 16.66%;
+		  }
+		  
+		  /* Eliminacion de los estilos de la lista*/
+		  ul, il { 
+		  list-style: none;
+		  padding: 0px;
+		  margin: 0px;
+		  }
+
+
+		/* definimos color de fondo, color fuente, borde del menu, espacio entre cada atributo*/
+		li a {
+		  background-color: #366;
+		  color: #FFF;
+		  text-decoration: none;
+		  text-align: center;
+		  display: flex;
+		  border: 0.5px solid #616a6b;
+		  border-radius: 5px;
+		  margin: 5px 0;
+		  padding: 5px;
+		  width: 100px;
+		  }
+
+		/*cuando pasamos el raton por encima cambia el color de fondo y el de la fuente*/
+		li a:hover {
+		  background-color: #6CC; 
+		  color: #000000;
+		  }
+		
+   /*Elemento imagen dentro de la cabecera*/
+		header {
+		  padding: 10px 0 10px 0;
+		  width: 960px; 
+		  margin:0 auto 10px auto;
+		  min-height: 100px;
+		  
+
+		}
+		
+		
+
+	footer {
+		margin: auto;
+		margin-top: 100px;
+        width: 960px;
+        height: 50px;
+		margin: 0 auto;
+        background: #FA5882;
+		
+		
+		
+		
+	}
+				
+
+				
+		/*Definiendo la clase enlaces*/
+			span.enlaces {
+			padding:.5em 0;    /*Espacio arriba y abajo*/
+			margin-top:10em;    /*Margen de arriba*/
+			border-top:1px solid #C5C5C5;     /*Margen de abajo*/
+			border-bottom:1px solid #C5C5C5;      /*Borde de abajo*/
+		
+			}
+
+			/*Definiendo la clase copyright*/
+			span.copyright {
+			float: right;        /*flota a la derecha*/
+			font-weight: bold; 
+			}
+			
+		
+		.logo{width: 100%;}   /*ancho que ocupa la imagen del logo*/
